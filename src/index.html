@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Interactive Pricing Component</title>
+</head>
+
+<body class="bg-left-top lg:bg-contain flex justify-center flex-wrap flex-col items-center bg-no-repeat h-screen px-6"
+    style="background-image: url(/images/bg-pattern.svg); font-family: 'Manrope', sans-serif;">
+
+    <div id="hero" class="bg-no-repeat bg-contain bg-center flex justify-center items-center flex-col h-36"
+        style="background-image: url(/images/pattern-circles.svg)">
+        <h1 class="text-xl font-extrabold text-gray-800 mb-1">Simple, traffic-based pricing</h1>
+        <p class="text-sm text-slate-400 font-semibold">Sign-up for our 30-day trial.</p>
+        <p class="text-sm text-slate-400 font-semibold">No credit card required.</p>
+    </div>
+
+    <div id="wrapper" class="bg-white rounded-lg py-8 px-6 mt-8 w-auto text-center max-w-xl sm:px-12 sm:py-11"
+        style="box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073); width: 85vw;">
+
+        <div id="viewsPrice" class="mb-6 hidden sm:flex flex-row justify-between items-center">
+            <p class="viewCount text-slate-400 font-semibold text-sm" style="letter-spacing: 2px;">100K PAGEVIEWS</p>
+            <div class=" price flex flex-row justify-center items-center">
+                <p class="priceCount font-extrabold text-gray-800 mr-1" style="font-size: 40px; line-height: 55px;">
+                    $16.00 </p>
+                <p class=" font-semibold text-slate-400 text-base">/ month</p>
+            </div>
+        </div>
+
+        <div id="views">
+            <p class="viewCount2 text-slate-400 font-semibold text-xs mb-5 sm:hidden" style="letter-spacing: 1.7px;">
+                100K
+                PAGEVIEWS
+            </p>
+        </div>
+
+        <div id="slidecontainer">
+            <input id="minmax-range" type="range" min="1" max="5" value=""
+                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 transition-transform">
+        </div>
+
+        <div id="price" class="flex justify-center items-center mt-5 sm:hidden">
+            <p class="priceCount2 text-3xl font-extrabold text-gray-800 mr-1">$16.00</p>
+            <p class=" font-semibold text-slate-400 text-sm">/ month</p>
+        </div>
+
+        <div id="monthlyYearly" class="flex justify-center items-center mt-8 mb-9">
+            <p class=" mr-3 text-slate-400 font-semibold text-xs">Monthly Billing</p>
+
+            <label for="default-toggle" class="mr-3 inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
+                <div
+                    class="w-11 h-6 bg-gray-200 dark:peer-focus:ring-teal-400 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-teal-400">
+                </div>
+            </label>
+
+            <p class="mr-1 sm:mr-2 text-slate-400 font-semibold text-xs">Yearly Billing</p>
+            <div class="discount sm:block">
+                <div class="hidden sm:block sm:bg-orange-100 sm:text-orange-400 sm:rounded-xl sm:font-bold fon"
+                    style="font-size: 10px; padding: 2px 8px;">25% discount</div>
+                <div class=" bg-orange-100 text-orange-400 rounded-xl font-bold fon sm:hidden"
+                    style="font-size: 10px; padding: 2px 8px;">
+                    -25%</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="featuresButton flex flex-col items-center justify-center sm:flex-row sm:justify-between sm:mt-8">
+
+            <div id="fetures" class="flex flex-col mt-6 sm:mt-0 sm:items-start">
+                <div class="feature1 flex justify-center items-center mt-3 sm:mt-0">
+                    <img class=" mr-4" src="/images/icon-check.svg" alt="Green Check Icon">
+                    <p class="text-slate-400 font-semibold text-xs">Unlimited websites</p>
+                </div>
+                <div class="feature2 flex justify-center items-center mt-3">
+                    <img class=" mr-4" src="/images/icon-check.svg" alt="Green Check Icon">
+                    <p class="text-slate-400 font-semibold text-xs">100% data ownership </p>
+                </div>
+                <div class="feature3 flex justify-center items-center mt-3">
+                    <img class=" mr-4" src="/images/icon-check.svg" alt="Green Check Icon">
+                    <p class="text-slate-400 font-semibold text-xs">Email reports</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center rounded-3xl w-44 h-10 bg-gray-800 text-indigo-200 mt-8 hover:cursor-pointer hover:text-white transition sm:mt-0"
+                style="background-color: #293356;">Start my
+                trial
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
